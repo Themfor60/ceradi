@@ -1,0 +1,524 @@
+
+body,html{
+   font-size:72.5%;
+   @media (min-width: 992px) { 
+    font-size:98.25% !important;
+   
+   }
+   
+}
+
+
+/*baner*/
+.topheader{
+   background-color:#1e9bd4;
+}
+/*boton home*/
+.bg-primary {
+   background: #1e9bd4!important;
+}
+.text-primary {
+   color: #1e9bd4!important;
+}
+/*reserva una cita*/
+.btn-primary { 
+   background-color: #1e9bd4 ;
+   border: none;
+}
+
+/*********************************** 
+4. ESTILOS COLOR SECUNDARIO
+***********************************/
+.bg-secondary {
+   background-color:#35363c !important;
+}
+.text-secondary {
+   color: #35363c!important;
+}
+
+.social {
+   i{
+      font-size:24px;
+      color:#fff;
+      padding:10px 14px;
+      opacity:0.8;
+      transition:all 0.4s ease-in-out;
+      &:hover{
+         opacity:1;
+         transform:scale(1.2) rotate(360deg);
+      }
+   }
+}
+
+#navegacion .iconmenu::before{
+   font-family: 'Font Awesome 5 Free';
+   content: "\f0c9";
+  font-weight:900;
+   font-size:30px;
+   color:#fff;
+      
+}
+#navegacion .cerraricono::before{
+   
+   content: "\f057";
+  
+}
+
+.navbar-toggler:focus, .navbar-toggler{
+    outline: none;
+ }
+
+.navbar-dark .navbar-nav .nav-link{
+   padding:15px 15px;
+   display:flex;
+   justify-content:space-between;
+   transition:all 0.2s ease;
+   border-radius:2rem;
+   margin-bottom:0.5rem;
+   
+   
+   &:after{
+       font-family:'Font Awesome 5 free';
+        content: "\f105";
+        font-weight: 900;
+      transition:all .2s ease;
+      
+      @media(min-width:768px){
+         content: "";      
+      
+      }
+   }
+   
+ }
+.fa-phone:before, .fa-envelope:before {
+    color: #1e9bd4;
+ }
+ 
+.navbar-dark .navbar-nav .active>.nav-link{
+   background-color:#1e9bd4;
+}
+
+.btn{
+   padding: .5rem 1.9rem !important;
+   border-radius:5rem!important;
+   position:relative;
+   overflow:hidden;
+   z-index: 100 !important;
+   
+    &-primary{
+      background-color:#1e9bd4!important;
+      border-color:#1e9bd4 !important;
+    
+       
+        &:hover{
+         
+       color:#1e9bd4 !important;
+          
+      &:after{
+         left:0.5rem;
+         top:0;
+         
+      }
+      
+      &:before{
+      content:"";
+      position:absolute;
+      width:140%;
+      left:-10px;
+      top:0;
+      background-color:#fff;
+      height:100%;
+      transform: skew(45deg, 0deg);
+      z-index:-100;
+      }
+      
+   }
+       
+        &:after{
+      
+     font-family:'Font Awesome 5 free';
+     content: "\f138";
+     font-weight:900;
+      position: relative;
+      left:1rem;
+      top:0;
+      transition: all .3s ease;
+   }
+       
+       &:before{
+      content:"";
+      position:absolute;
+      width:0;
+      left:50%;
+      top:0;
+      background-color:#fff;
+      height:100%;
+      transform: skew(45deg, 0deg);
+      z-index:-10;
+      transition:all .5s ease;
+      }
+     
+       &:active,
+   &:focus{
+      box-shadow: 0 0 0 0.2rem rgba(28, 177, 223, 0.32) !important;
+   }
+   }
+
+}
+
+.img-container {
+    height: 73vh;
+    color: #fff;
+  }
+  
+  .swiper-slide {
+    background-position:  center;
+    background-size: cover;
+    
+  }
+  
+  .swiper-slide::before {
+    content: "";
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.5);
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+  /* iconos de las barra*/
+.barra{
+    height: 20vh;
+    background: #0a8ac5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.barra img{
+    width: 120px;
+    height: 120px;
+}
+
+.barra img:hover{
+ background: #01bdf7;
+ border-radius: 20px;
+}
+/*loarder*/
+#container-loarder{
+    background: rgba(250, 240, 245, 0.9);
+    height: 100%;
+    width: 100%;
+    transition: all 2s ease;
+    position: fixed;
+    z-index: 10000;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0  ;   
+}
+.spinner-border{
+   position: absolute;
+   bottom: 50%;
+   left: 45%;
+   right: 50%;
+   color: rgb(15, 173, 247);
+   margin: auto;  
+   
+}
+/*icono de whatsapp/*/
+
+.container-whatsapp{
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+    z-index: 1000;
+}
+.container-whatsapp img{
+    width: 74px;
+    height: 74px;
+}
+
+/*Quienes Somos*/
+.nosotros {
+    
+    margin-top: 120px;
+    
+}
+  
+.container .titulo{
+   color: #0a8ac5;
+   margin-bottom: 50px;
+   margin-top: -70px;
+}
+.container-date{
+    background: #21618C ;
+    
+    height: 500px;
+    border-radius: 20px;
+    color: white;
+
+}
+.date{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.date img{
+    width: 12vh;
+    border-radius: 50%;
+    margin-top: 40px;
+}
+
+
+.container h1{
+    margin: 10px 0 10px 0;
+    font-weight: 500;
+    color: #85C1E9;
+}
+.text{
+    margin: 30px 0 12px 0 ;
+}
+
+    
+
+.container .green{
+    color: #f7f8f4;
+    font-weight: 700;
+}
+
+.container .redes{
+    display: flex;
+    flex-direction: column;
+}
+/*corousel*/
+
+.carousel-control-prev, .carousel-control-next{
+    background: none;
+    border: none;
+}
+
+
+/*contactos*/
+ul {
+    margin: 0px;
+    padding: 0px;
+}
+.footer-section {
+  background: #35363c;
+  position: relative;
+  margin-top: 50px;
+}
+.footer-cta {
+  border-bottom: 1px solid #55ACEE;
+}
+.single-cta i {
+  color: #55ACEE;
+  font-size: 30px;
+  float: left;
+  margin-top: 8px;
+}
+.cta-text {
+  padding-left: 15px;
+  display: inline-block;
+}
+.cta-text h4 {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 2px;
+}
+.cta-text span {
+  color: #757575;
+  font-size: 15px;
+}
+.footer-content {
+  position: relative;
+  z-index: 2;
+}
+.footer-pattern img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 330px;
+  background-size: cover;
+  background-position: 100% 100%;
+}
+.footer-logo {
+  margin-bottom: 30px;
+}
+.footer-logo img {
+    max-width: 200px;
+}
+.footer-text p {
+  margin-bottom: 14px;
+  font-size: 14px;
+      color: #7e7e7e;
+  line-height: 28px;
+}
+.footer-social-icon span {
+  color: #fff;
+  display: block;
+  font-size: 20px;
+  font-weight: 700;
+  font-family: 'Poppins', sans-serif;
+  margin-bottom: 20px;
+}
+.footer-social-icon a {
+  color: #fff;
+  font-size: 16px;
+  margin-right: 15px;
+}
+.footer-social-icon i {
+  height: 40px;
+  width: 40px;
+  text-align: center;
+  line-height: 38px;
+  border-radius: 50%;
+}
+.facebook-bg{
+  background: #3B5998;
+}
+.twitter-bg{
+  background: #55ACEE;
+}
+.instagram-bg{
+  background: #db389d;
+}
+.footer-widget-heading h3 {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 40px;
+  position: relative;
+}
+.footer-widget-heading h3::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -15px;
+  height: 2px;
+  width: 50px;
+  background: #55ACEE;
+}
+.footer-widget ul li {
+  display: inline-block;
+  float: left;
+  width: 50%;
+  margin-bottom: 12px;
+}
+.footer-widget ul li a:hover{
+  color: #55ACEE;
+}
+.footer-widget ul li a {
+  color: #878787;
+  text-transform: capitalize;
+}
+.subscribe-form {
+  position: relative;
+  overflow: hidden;
+}
+.subscribe-form input {
+  width: 100%;
+  padding: 14px 28px;
+  background: #2E2E2E;
+  border: 1px solid #2E2E2E;
+  color: #fff;
+}
+.subscribe-form button {
+    position: absolute;
+    right: 0;
+    background: #55ACEE;
+    padding: 13px 20px;
+    border: 1px solid #55ACEE;
+    top: -25px;
+    
+}
+.subscribe-form button i {
+  color: #fff;
+  font-size: 22px;
+  transform: rotate(-6deg);
+  
+}
+
+.copyright-area{
+  background: #202020;
+  padding: 25px 0;
+}
+.copyright-text p {
+  margin: 0;
+  font-size: 14px;
+  color: #878787;
+}
+
+.footer-menu li {
+  display: inline-block;
+  margin-left: 20px;
+}
+.footer-menu li:hover a{
+  color: #55ACEE;
+}
+.footer-menu li a {
+  font-size: 14px;
+  color: #878787;
+}
+/*citas*/
+.container-cita{
+    background: #085ad4;
+    color: white;
+    border-radius: 20px;
+    padding: 10px;
+    position: fixed;
+    top: 50px;
+    right: 50px;
+    left: 50px;
+    z-index: 100;
+    width: auto;
+    display: none;
+}
+button:not(:disabled) {
+    margin-top: 25px;
+}
+.boton-cerrar i{
+    font-size: 30px;
+    color: white;
+}
+
+
+
+
+/*Responsiva*/
+
+@media(max-width:768px){
+    .barra img{
+        width: 90px;
+        height: 90px;
+    
+    }
+    
+    .container-date {
+        margin-top: 15px;
+        
+    }
+    .container-date p{
+        font-size: 1.2rem;
+    }
+    .contactos{
+        text-align: center;
+    }
+
+     
+ }   
+
+@media(max-width:1203px){
+    .container-date p{
+        font-size: .9rem;
+    }
+    .container-date { 
+        width: auto;
+        height: auto;
+        padding: 5px;
+       
+        
+    }
+}
