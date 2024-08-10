@@ -22,12 +22,12 @@ include "conexion.php";
         if ($ejecute) {
             echo '<script>
             alert("Datos Enviados yo")
-            window.location = "../index.php"
+            window.location = "../index.html"
             </script>';
         } else {
             echo '<script>
             alert("Datos no Enviados ")
-            window.location = "../index.php"
+            window.location = "../index.html"
             </script>';
         }
     
